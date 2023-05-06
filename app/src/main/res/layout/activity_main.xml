@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:background="#0E6FFF"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Dashboard"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                >
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="40dp"
+                    android:background="@drawable/button"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:background="@drawable/transparent_bg"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/wrench"
+                        android:layout_height="match_parent"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/shape"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/greeting"
+                    android:fontFamily="@font/medium"
+                    android:textColor="#999CA0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_width="match_parent"
+                    android:text="Good Morning"
+                    android:textSize="18sp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:text="Ajay Manva &#128075;"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textColor="#999CA0"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_width="wrap_content"
+                                android:text="Overview"
+                                android:fontFamily="@font/medium"
+                                android:textSize="20sp"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="end"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.card.MaterialCardView
+                                    app:strokeWidth="1dp"
+                                    android:backgroundTint="#FFFFFF"
+                                    app:strokeColor="#999CA0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_margin="10dp"
+                                        android:fontFamily="@font/regular"
+                                        android:textColor="#000000"
+                                        android:layout_width="wrap_content"
+                                        android:text="23 Apr - 23 May"
+                                        android:layout_height="wrap_content"/>
+
+                                </com.google.android.material.card.MaterialCardView>
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <com.github.mikephil.charting.charts.LineChart
+                                android:id="@+id/getTheGraph"
+                                android:layout_margin="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content" />
+                
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:text="  View Analytics"
+                    android:fontFamily="@font/semibold"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textAllCaps="false"
+                    app:cornerRadius="10dp"
+                    app:strokeColor="#999CA0"
+                    app:icon="@drawable/arrow"
+                    app:iconGravity="textStart"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_height="65dp"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:text="Top Links"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/semibold"
+                        android:id="@+id/tl_btn"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        app:cornerRadius="20dp"
+                        android:textAllCaps="false"
+                        android:layout_height="wrap_content"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/rl_btn"
+                        android:fontFamily="@font/semibold"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:text="Recent Links"
+                        app:cornerRadius="20dp"
+                        android:textAllCaps="false"
+                        android:textColor="#999CA0"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <fragment
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:id="@+id/nav_host_fragment"
+                    app:defaultNavHost="true"
+                    app:navGraph="@navigation/nav_graph"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:text="  View all Links"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textAllCaps="false"
+                    app:cornerRadius="10dp"
+                    android:textColor="@color/black"
+                    app:strokeColor="#999CA0"
+                    app:icon="@drawable/links"
+                    android:fontFamily="@font/semibold"
+                    app:iconGravity="textStart"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_height="65dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/whatsapp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:text="Talk with us"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/semibold"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/faq_bg"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/faq"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/semibold"
+                        android:text="Frequently Asked Questions"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottomAppBar"
+        app:fabCradleMargin="10dp"
+        app:titleTextColor="@color/black"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="1dp"
+        app:contentInsetEnd="10dp"
+        app:fabAnchorMode="cradle"
+        app:contentInsetStart="0dp"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bottomNavigationView"
+            app:itemIconTint="#999CA0"
+            app:menu="@menu/bottom_app_bar"
+
+            android:background="@drawable/transparent_bg"
+
+            />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:backgroundTint="#0E6FFF"
+        android:src="@drawable/plus"
+        app:layout_anchor="@id/bottomAppBar"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

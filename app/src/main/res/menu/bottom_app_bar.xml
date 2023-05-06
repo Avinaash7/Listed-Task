@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/links"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/links"
+        android:title="Links" />
+    <item
+        android:id="@+id/courses"
+        app:showAsAction="always"
+        android:icon="@drawable/courses"
+        android:title="Courses" />
+    <item
+        android:id="@+id/campaign"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/campaign"
+        android:title="Campaigns" />
+    <item
+        android:id="@+id/profile"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+
+</menu>
